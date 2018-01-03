@@ -5,6 +5,9 @@ This package is used for tracing englacial layers from Radio Echo Sounding (RES)
 Please cite the following reference. 
 > Xiong, S., Muller, J.P. and Carretero, R.C., 2017. A New Method for Automatically Tracing Englacial Layers from MCoRDS Data in NW Greenland. Remote Sensing, 10(1), p.43. 
 
+Please also cite the following reference if the test data are used.
+> Leuschen, C.; Gogineni, P.; Hale, R.; Paden, J.; Rodriguez, F.; Panzer, B.; Gomez, D.IceBridge MCoRDS L1BGeolocated Radar Echo Strength Profiles, version 2; National Snow and Ice Data Center: Boulder, CO, USA, 2014. 
+
 ## Getting Started
 
 ### Prerequisites
