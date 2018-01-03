@@ -162,9 +162,12 @@ batchconnetframes('datalist.txt');
 ```
 
 ## Examples of Results
-![Comparison  of  the  traced  englacial  layers  from  radio  echogram  from  MCoRDS  data20110329_02_019-020](validate-c.png)
+![Stratigraphy](result-strat.png)
 
-Figure 1. Comparison  of  the  traced  englacial  layers  from  radio  echogram  from  MCoRDS  data (frames 19-21 from segment of 20110329\_02)
+Figure 1. The RRRAG isochrones from MacGregor's study.
+
+![Comparison](result.png)
+Figure 2. Comparison  of  the  traced  englacial  layers  from  radio  echogram  from  MCoRDS  data (frames 19-21 from segment of 20110329\_02)
 
 ## Version
 
