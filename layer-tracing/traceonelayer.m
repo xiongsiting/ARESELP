@@ -57,8 +57,8 @@ end
             break; end
         
         % calculate HT slope angle
-%         [hough_angle,~] = htSlopeAngle(blkim,gapfill,buffdist); %,HT_N,gapfill);
-        hough_angle = rdSlopeAngle(blkim);
+         [hough_angle,~] = htSlopeAngle(blkim,gapfill,buffdist); %,HT_N,gapfill);
+%        hough_angle = rdSlopeAngle(blkim);
         if isnan(hough_angle)
             break; end  
 %         if abs(pre_angle - hough_angle) > DELTA_ORI_THRESH, break;end
@@ -114,8 +114,8 @@ end
         if isempty(blkim) || xlft < 1
             break;end
         
-%        [hough_angle,~] = htSlopeAngle(blkim,gapfill,buffdist); %,HT_N,gapfill);
-       hough_angle = rdSlopeAngle(blkim);
+        [hough_angle,~] = htSlopeAngle(blkim,gapfill,buffdist); %,HT_N,gapfill);
+%       hough_angle = rdSlopeAngle(blkim);
        if isnan(hough_angle)
            break; end 
 %        if abs(pre_angle - hough_angle) > DELTA_ORI_THRESH,break;end
