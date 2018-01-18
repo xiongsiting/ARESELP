@@ -2,10 +2,6 @@ function imLayer = traceonelayer(peakim,seedpoints,imLayer,labelOffset,params)
 
 DIST = 7;
 BLOCKSIZE = 51;
-DELTA_ORI_THRESH = inf;
-gapfill = ceil(0.25 * BLOCKSIZE);
-buffdist = 2 * DIST;
-HDIST = 3 * BLOCKSIZE;
 
 if ~isempty(params)
     DIST = params{1};
@@ -17,18 +13,26 @@ if ~isempty(params)
 
     if max(size(params)) > 2
         DELTA_ORI_THRESH = params{3};
+    else
+        DELTA_ORI_THRESH = 90;
     end
 
     if max(size(params)) > 3
         gapfill = params{4};
-    end  
+    else
+        gapfill = ceil(0.25 * BLOCKSIZE);
+    end
 
     if max(size(params)) > 4
         buffdist = params{5};
+    else
+        buffdist = 2 * DIST;
     end
     
     if max(size(params)) > 5
         HDIST = params{6};
+    else
+        HDIST = 3 * BLOCKSIZE;
     end
 end
         
