@@ -103,7 +103,7 @@ tic;
 [imLayer,dinfo] = tracelayers(peakim,seedpt,params); 
 toc;
 tic; 
-[newimLayer, labelLayer] = postprocesslayers(imLayer,DIST,HDIST);
+[newimLayer, labelLayer] = postprocesslayers(imLayer);
 toc;
 ```
 #### Save result of one frame
