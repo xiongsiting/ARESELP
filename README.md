@@ -129,10 +129,11 @@ Make an input file list for frames on one segment
 pwd
 ./home/
 cat datalist1.txt
-<< 
-./test_data/Data_20110329_02_019.mat
-./test_data/Data_20110329_02_020.mat
-./test_data/Data_20110329_02_021.mat
+<< 3
+Data_20110329_02_019.mat
+Data_20110329_02_020.mat
+Data_20110329_02_021.mat
+>> Data_20110329_02_019-021-layers.mat
 ```
 Run the batch connection of frames
 
@@ -149,13 +150,15 @@ Make an input file list for frames on one segment
 pwd
 ./home/
 cat datalist.txt
-<< 
-./test_data/Data_20110329_02_019.mat
-./test_data/Data_20110329_02_020.mat
-./test_data/Data_20110329_02_021.mat
-<<
-./test_data/Data_20120507_03_011.mat
-./test_data/Data_20120507_03_012.mat
+<< 3
+Data_20110329_02_019.mat
+Data_20110329_02_020.mat
+Data_20110329_02_021.mat
+>> Data_20110329_02_019-021-layers.mat
+<< 2
+Data_20120507_03_011.mat
+Data_20120507_03_012.mat
+>> Data_20120507_03_011-012-layers.mat
 ```
 
 Run the batch connection of frames
