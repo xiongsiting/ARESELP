@@ -1,4 +1,4 @@
-function [nums,inlist,outlist] = loadfilelist(txtname)
+function [nums,inlist] = loadfilelist(txtname)
 
 fid = fopen(txtname);
 data=textscan(fid,'%s ');
@@ -18,15 +18,15 @@ idx = cell2mat(idx);
 nf = size(idx,1);
 nums = zeros(nf,1);
 inlist = cell(nf,1);
-outlist = cell(nf,1);
+%outlist = cell(nf,1);
 for i = 1:nf
     idxin = idx(i,1);
     nums(i) = str2num(data{idxin + 1});
     for j = 1:nums(i)
         inlist{i,j} = data{idxin + 1 + j};
     end
-    idxout = idx(i,2);
-    outlist{i} = data{idxout + 1};
+    %idxout = idx(i,2);
+    %outlist{i} = data{idxout + 1};
     
 end
 
