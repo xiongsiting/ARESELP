@@ -33,7 +33,7 @@ seedpt = selectseedpt(peakim);
 % DIST = 3; BLOCKSIZE = 5;
 % define parameters: distance allowance, block size, slope angle difference
 DIST = 7; BLOCKSIZE = 51; SMOOTHANGLE = 90;
-if nargins < 3
+if nargin < 3
   params = {DIST,BLOCKSIZE,SMOOTHANGLE}; 
 end
 
