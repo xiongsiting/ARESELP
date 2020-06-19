@@ -43,7 +43,8 @@ function plotgeolayers(geolayers,lineColor,holdon,flip)
     else
         hold on;
     end
-
+    
+    %n = 0; n2 = 0;
     % Create multiple lines using matrix input to plot
     x = geolayers.x; y = geolayers.y;
     x = x - x(1); y = y - y(1);
@@ -132,7 +133,7 @@ function plotgeolayers(geolayers,lineColor,holdon,flip)
             if mclrflag
                 plot(distance,ielevation,'-',...
                     'color',lineColor(i,:),'linewidth',1.5);
-                n = n + 1;
+                %n = n + 1;
             else
                 plot(distance,ielevation,'-',...
                     'color',lineColor,'linewidth',1.5);
@@ -156,6 +157,10 @@ function plotgeolayers(geolayers,lineColor,holdon,flip)
     xtickformat('%.1f');ytickformat('%.1f');
     
     yyaxis right;
+    
+    if ~isempty(edgeHei)
+        return
+    end
 
     edgeHei(edgeHei == 0) = [];
     age(isnan(age) | isempty(age)) = [];
