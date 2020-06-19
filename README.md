@@ -133,7 +133,7 @@ cat datalist1.txt
 Data_20110329_02_019.mat
 Data_20110329_02_020.mat
 Data_20110329_02_021.mat
->> Data_20110329_02_019-021-layers.mat
+>> 
 ```
 Run the batch connection of frames
 
@@ -154,11 +154,11 @@ cat datalist.txt
 Data_20110329_02_019.mat
 Data_20110329_02_020.mat
 Data_20110329_02_021.mat
->> Data_20110329_02_019-021-layers.mat
+>> 
 << 2
 Data_20120507_03_011.mat
 Data_20120507_03_012.mat
->> Data_20120507_03_011-012-layers.mat
+>> 
 ```
 
 Run the batch connection of frames
