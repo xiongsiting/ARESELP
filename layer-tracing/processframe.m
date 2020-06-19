@@ -33,7 +33,9 @@ seedpt = selectseedpt(peakim);
 % DIST = 3; BLOCKSIZE = 5;
 % define parameters: distance allowance, block size, slope angle difference
 DIST = 7; BLOCKSIZE = 51; SMOOTHANGLE = 90;
-params = {DIST,BLOCKSIZE,SMOOTHANGLE}; 
+if nargins < 3
+  params = {DIST,BLOCKSIZE,SMOOTHANGLE}; 
+end
 
 % imLayer: the image containing traced layers
 % debuginfo: no. lengths, and remaining point output for debugging
@@ -41,7 +43,7 @@ tic;
 [imLayer,dinfo] = tracelayers(peakim,seedpt,params); 
 toc;
 tic; 
-[newimLayer, labelLayer] = postprocesslayers(imLayer,DIST,HDIST);
+[newimLayer, labelLayer] = postprocesslayers(imLayer,DIST);
 toc;
 
 filename = split(outfilename,'.');
