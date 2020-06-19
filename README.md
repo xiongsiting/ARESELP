@@ -137,7 +137,7 @@ cat datalist1.txt
 Run the batch connection of frames
 
 ```matlab
-batchconnetframes('datalist1.txt');
+batchconnectframes('datalist1.txt');
 ```
 
 ### 3. Batch processing for multi-segment
@@ -161,7 +161,7 @@ cat datalist.txt
 Run the batch connection of frames
 
 ```matlab
-batchconnetframes('datalist.txt');
+batchconnectframes('datalist.txt');
 ```
 
 ## Examples of Results
