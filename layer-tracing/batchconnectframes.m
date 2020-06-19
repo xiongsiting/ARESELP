@@ -1,8 +1,8 @@
 function batchconnectframes(datalist)
 
-[nums,inlist,outlist] = loadfilelist(datalist);
+[nums,inlist] = loadfilelist(datalist);
 % for one segment
-for s = 8:12
+for s = 1:length(nums)
     tic;
     segments = inlist(s,:);
     basenames = cell(nums(s),1);
