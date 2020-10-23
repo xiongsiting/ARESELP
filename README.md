@@ -182,7 +182,7 @@ batchconnectframes('datalist.txt');
 ## Examples of Results
 ![Stratigraphy](result-strat.png)
 
-Figure 1. The RRRAG isochrones from MacGregor's study.
+Figure 1. The RRRAG isochrones from MacGregor et al.'s study.
 
 ![Comparison](result.png)
 Figure 2. Comparison  of  the  traced  englacial  layers  from  radio  echogram  from  MCoRDS  data (frames 19-21 from segment of 20110329\_02)
