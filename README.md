@@ -166,7 +166,19 @@ Run the batch connection of frames
 ```matlab
 batchconnectframes('datalist.txt');
 ```
+Results of traced layers will be saved in current folder as LAYERS-<filename>.mat
+	
+```bash
+cd test_data
+ls .
+LAYERS-Data_20110329_02_019-021.mat	
+LAYERS-20120507_03_011-012.mat
+```
 
+### 4. Display
+```matlab
+batchconnectframes('datalist.txt');
+```
 ## Examples of Results
 ![Stratigraphy](result-strat.png)
 
